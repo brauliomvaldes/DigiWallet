@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+h1{ 
+    color: aliceblue;
+}
+h2{
+    color: #c7ce0e;
+}
+h3{
+    color: black;
+    background-color: #c7ce0e;
+}
+body{
+    background-image: url("../img/imagen.jpg");
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+header{
+    margin: 10px;
+}
+li:hover{
+    color: #f8f8ef8d;
+    background-color: #c7ce0e;
+    text-transform: uppercase;
+}
+
+/* Estilo para el contenedor de la tabla */
+.tabla-container {
+    max-height: 500px; /* Altura máxima para mostrar la barra de desplazamiento */
+    overflow: auto; /* Habilita la barra de desplazamiento */
+}
+table,
+td,
+th {
+    border: 1px solid;
+    padding: 20px;
+}
+
+table {
+    text-align: right;
+}
+
+table, thead {
+    position: sticky;
+    top: 0;
+}
