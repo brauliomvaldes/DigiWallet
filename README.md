@@ -16,6 +16,6 @@ Para descargar y ejecutar el proyecto, se pueden seguir los siguinetes pasos:
 
 - Ingresar a la carpeta creada con Git
 
-- Para editar el código, digitar "code ." y dar <enter>
+- Para editar el código, digitar "code ." y dar "return"
 
-- Dentro del editor, también podrá ejecutar empleando el coplemento Live Server.
+- Dentro del editor, también lo podrá ejecutar usando el complemento Live Server.
