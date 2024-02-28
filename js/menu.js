@@ -4,9 +4,9 @@
 
 $(document).ready(function () {
 
-  // consula autorización
+  // consulta autorización
   if(!sessionStorage.getItem('auth')){
-    window.location.href = './../login.html';
+    window.location.href = '../codigo/login.html';
   }
   // logout
   $('#logoutBtn').click(function () {
