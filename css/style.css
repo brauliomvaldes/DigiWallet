@@ -2,6 +2,17 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+    background-image: url("../img/imagen.jpg");
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+div{
+    display: grid;
+}
 h1{ 
     color: aliceblue;
 }
@@ -12,21 +23,36 @@ h3{
     color: black;
     background-color: #c7ce0e;
 }
-body{
-    background-image: url("../img/imagen.jpg");
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+nav{
+    border-radius: 10px;
+}
+nav>div{
+    background: rgb(239, 241, 242);
+}
+nav>div>span{
+    color: rgb(4, 4, 144);
+    font-size: 30px;
+}
+header>div>div{
+    color: rgb(45, 214, 23);
+    font-size: 60px;
+    background-color: rgb(7, 7, 17);
+    border-radius: 10px;
+    margin: 5px;
 }
 header{
-    margin: 10px;
+    margin: 5px;
 }
 li:hover{
     color: #f8f8ef8d;
     background-color: #c7ce0e;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
 /* Estilo para el contenedor de la tabla */
