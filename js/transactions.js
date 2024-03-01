@@ -40,7 +40,7 @@ $(document).ready(function () {
   }
 
   function creaRegistro(fecha, tipo, monto, balance, destinatario) {
-    $("#registros").prepend('<tr><td>' + fecha + '</td><td>' + tipo + '</td><td>' + monto + '</td><td>' + balance + '</td><td>' + destinatario + '</td></tr>');
+    $("#registros").prepend('<tr><td>' + fecha + '</td><td>' + tipo + '</td><td>' + monto + '</td><th>' + balance + '</th><td>' + destinatario + '</td></tr>');
   }
 
 

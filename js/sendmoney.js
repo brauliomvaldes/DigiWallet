@@ -288,7 +288,7 @@ $(document).ready(function () {
 
   // crea la transacciones para la billetera y el historial
   function saveTransac() {
-    let cifraMonto = monto.toLocaleString("es-ES");
+    let cifraMonto = (-monto).toLocaleString("es-ES");
     let cifraBalance = balance.toLocaleString("es-ES");
     movimientoCuenta = fecha + ',' + tipo + ',' + cifraMonto + ',' + cifraBalance + ',' + destinatario;
     transac.push(movimientoCuenta);

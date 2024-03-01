@@ -24,7 +24,7 @@ h1{
 h2{
     color: #c7ce0e;
 }
-h3{
+h3, h4{
     color: black;
     background-color: #c7ce0e;
 }
@@ -34,7 +34,7 @@ img{
     margin: 10px;
 }
 nav{
-    border-radius: 10px;
+    border-radius: 5px;
 }
 nav>div{
     background: rgb(239, 241, 242);
@@ -46,12 +46,18 @@ nav>div>span{
 header>div>div{
     color: rgb(45, 214, 23);
     font-size: 60px;
-    background-color: rgb(7, 7, 17);
+    background-color: rgb(6, 6, 56);
     border-radius: 10px;
     margin: 5px;
+    padding: auto;
 }
 header{
     margin: 5px;
+}
+header>div>h2{
+    color: rgb(4, 4, 144);
+    background: rgb(239, 241, 242);
+    border-radius: 5px;
 }
 li:hover{
     color: #f8f8ef8d;
@@ -71,7 +77,6 @@ th {
     border: 1px solid;
     padding: 20px;
 }
-
 table {
     text-align: right;
 }

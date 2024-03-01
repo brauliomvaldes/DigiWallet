@@ -7,6 +7,14 @@ $(document).ready(function () {
   // consulta autorización
   if(!sessionStorage.getItem('auth')){
     window.location.href = '../codigo/login.html';
+  }else{
+    let wallet = localStorage.getItem('wallet');
+    if (wallet != null){
+      let bienvenida = (JSON.parse(wallet).user).toUpperCase();
+      let saldo = JSON.parse(wallet).saldo.toLocaleString("es-ES");
+      let fecha = new Date().toLocaleString().split(',')[0];
+      $('#bienvenida').text(`Bienvenido(a) ${bienvenida}, tu saldo contable al ${fecha} es de $ ${saldo}.- pesos`);
+    }
   }
   // logout
   $('#logoutBtn').click(function () {
