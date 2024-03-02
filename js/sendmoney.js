@@ -174,7 +174,7 @@ $(document).ready(function () {
     elementoHtml +=     '<select class="form-select" selected name="listaContactos" id="listaContactos">';
     elementoHtml +=        '<option value="" selected>nombre del destinatario</option>';
     elementoHtml +=     '</select>';
-    elementoHtml +=     "<button type='button' class='form-control btn btn-primary'";
+    elementoHtml +=     "<button type='button' class='form-control btn btn-warning'";
     elementoHtml +=         " data-toggle='modal' data-target='#destinatarioModal' data-whatever=''";
     elementoHtml +=         "id='nuevoDestinatarioBtn'>";
     elementoHtml +=         "Nuevo Destinatario</button>";
@@ -183,10 +183,10 @@ $(document).ready(function () {
     elementoHtml += '<div>';
     elementoHtml += '<br>';
     elementoHtml +=   '<h3 id="txtDestinatarioSeleccionado"></h3>';
-    elementoHtml +=   "<button class='form-control btn btn-success' id='confirmarBtn'>";
-    elementoHtml +=   "Confirmar la Transferencia</button>";
-    elementoHtml +=   "<button class='form-control btn btn-danger' id='cancelarBtn'>";
-    elementoHtml +=   "Cancela la Transferencia</button>";
+    elementoHtml +=     "<button class='form-control btn btn-success' id='confirmarBtn'>";
+    elementoHtml +=     "Confirmar la Transferencia</button>";
+    elementoHtml +=     "<button class='form-control btn btn-danger' id='cancelarBtn'>";
+    elementoHtml +=     "Cancela la Transferencia</button>";
     elementoHtml += "</div>";
     
     return elementoHtml;

@@ -17,7 +17,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <span><img src="../img/logo-signo-de-pesos.png" alt=""></span>
+          <span><img src="../img/logo-signo-de-pesos.png" alt="" /></span>
           <span>DigiWallet</span>
           <button
             class="navbar-toggler"
@@ -42,12 +42,18 @@
                 >
               </li>
               <li class="nav-item">
-                <a id="transferirNav" class="nav-link" href="../codigo/sendmoney.html"
+                <a
+                  id="transferirNav"
+                  class="nav-link"
+                  href="../codigo/sendmoney.html"
                   >| Transferir Dinero</a
                 >
               </li>
               <li class="nav-item">
-                <a id="movimientosNav" class="nav-link" href="../codigo/transactions.html"
+                <a
+                  id="movimientosNav"
+                  class="nav-link"
+                  href="../codigo/transactions.html"
                   >| Ultimos Movimientos</a
                 >
               </li>
@@ -65,6 +71,9 @@
               
               <br />
               <h1 id="titulo-movimiento"></h1>
+              <div id="saldo">
+                <h2>saldo disponible $ <span id="balance"></span></h2>
+              </div>
               <br />
               <div class="input-group mb-3">
                 <span class="input-group-text">Cantidad $</span>
@@ -89,9 +98,6 @@
               <div id="destinatarioDiv" hidden>
                 <p id="destinatario"></p>
                 <div></div>
-              </div>
-              <div id="saldo">
-                <h2>Disponible $ <span id="balance"></span></h2>
               </div>
             </div>
           </div>

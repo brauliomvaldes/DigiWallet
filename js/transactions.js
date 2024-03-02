@@ -46,7 +46,7 @@ $(document).ready(function () {
 
       // consulta si hay movimientos que mostrar
       if(transac.length > 0){
-        $("#titulo-historial").text('Historial de Movimientos');
+        $("#titulo-historial").text('Ultimas Transacciones');
         // muestra
         $("#historial-cuenta").removeAttr("hidden");
 

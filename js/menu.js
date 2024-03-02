@@ -13,7 +13,8 @@ $(document).ready(function () {
       let bienvenida = (JSON.parse(wallet).user).toUpperCase();
       let saldo = JSON.parse(wallet).saldo.toLocaleString("es-ES");
       let fecha = new Date().toLocaleString().split(',')[0];
-      $('#bienvenida').text(`Bienvenido(a) ${bienvenida}, tu saldo contable al ${fecha} es de $ ${saldo}.- pesos`);
+      $('#bienvenida').text(`Bienvenido(a) ${bienvenida}`);
+      $('#cuenta').text(`Hoy ${fecha} tu saldo disponible es $${saldo}`);
     }
   }
   // logout
