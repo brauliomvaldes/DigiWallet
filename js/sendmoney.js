@@ -181,12 +181,12 @@ $(document).ready(function () {
     elementoHtml +=   '</div>';
     elementoHtml += '</div>';
     elementoHtml += '<div>';
-    elementoHtml += '<br>';
     elementoHtml +=   '<h3 id="txtDestinatarioSeleccionado"></h3>';
-    elementoHtml +=     "<button class='form-control btn btn-success' id='confirmarBtn'>";
-    elementoHtml +=     "Confirmar la Transferencia</button>";
-    elementoHtml +=     "<button class='form-control btn btn-danger' id='cancelarBtn'>";
-    elementoHtml +=     "Cancela la Transferencia</button>";
+    elementoHtml +=   '<br>';
+    elementoHtml +=   "<button class='form-control btn btn-success' id='confirmarBtn'>";
+    elementoHtml +=   "Confirmar la Transferencia</button>";
+    elementoHtml +=   "<button class='form-control btn btn-danger' id='cancelarBtn'>";
+    elementoHtml +=   "Cancela la Transferencia</button>";
     elementoHtml += "</div>";
     
     return elementoHtml;

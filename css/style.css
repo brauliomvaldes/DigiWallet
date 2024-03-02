@@ -103,6 +103,9 @@ table, thead {
     position: sticky;
     top: 0;
 }
+#nuevoDestinatarioBtn{
+    margin-left: 10px;
+}
 #confirmarBtn, #cancelarBtn{
     margin: 2px;
 }
