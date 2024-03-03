@@ -6,9 +6,8 @@ $(document).ready(function () {
       let apellidos = $('#apellidos').val();
       let email = $('#email').val();
       let password = $('#password').val();
-      console.log(nombres,apellidos,email,password);
-      // pregunta si no existe el usuario
-      if (!localStorage.getItem(email)) {
+      // pregunta si no existe una wallet
+      if (!localStorage.getItem('wallet')) {
         usuario = {
             nombres: nombres,
             apellidos: apellidos,
@@ -19,7 +18,7 @@ $(document).ready(function () {
         localStorage.setItem(email, JSON.stringify(usuario));
         swal("Registro existoso", "Se registro correctamente el usuario!", "success");
       } else {
-        swal("Usuario ya existe", "reintente nuevamente.!", "error");
+        swal("Registro fallido", "Ya existe Cliente con Wallet, debe recuperar sus credenciales!", "error");
       }
     });
 

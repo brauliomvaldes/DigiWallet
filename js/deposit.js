@@ -79,7 +79,7 @@ $(document).ready(function () {
       // datos para registro de transaccion
       tipo = 'Depósito';
       monto = deposito;
-      destinatario = user + '<-';
+      destinatario = user;
       generaTransaccion()
       swal("Operación Exitosa!", "Depósito realizado", "success");
     } else {

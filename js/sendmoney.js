@@ -164,7 +164,8 @@ $(document).ready(function () {
   // crea elemento html de forma dínamica para realizar transferencia de dinero
   //
   const creacionElementosHtml = () => {
-
+    // como práctica de como agregar elementos de forma dinámica a otros 
+    // elementos html por medio de js
     let elementoHtml = '';
     elementoHtml += '<div class="input-group mb-3">'; 
     elementoHtml +=   '<div class="contactosDiv input-group-text">';
