@@ -2,7 +2,7 @@
 
 Consiste en un prototipo frontend básico para simular una billetera digital, ya que en esta etapa no se esta utilizando una conexión a BD ni backend.
 
-Para utilizar el prototipo, las credenciales de acceso son User = "admin" y el Pass = "12345"
+Para utilizar el prototipo, las credenciales de acceso deben ser definidas al momento de registrar al usuario.
 
 Para descargar y ejecutar el proyecto, se pueden seguir los siguinetes pasos:
 
