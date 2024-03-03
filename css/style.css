@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-image: url("../img/imagen.jpg");
@@ -9,6 +10,39 @@ body{
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+}
+.container-login{
+    width: 500px;
+    /* background: black; */
+    background-color: rgb(12, 17, 17);
+    padding: 30px;
+    margin:auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 7px 13px 37px #000;
+}
+.controls {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;    
+    border: 2px solid #5052ec;
+}
+#login-form p {
+    text-align: center;
+    font-size: medium;
+}
+
+#login-form p a {
+    text-decoration: none;
+}
+
+#login-form p a:hover{
+    color: #5ebdf5;
+    text-decoration: underline;
+    font-size: 110%;
 }
 section{
     display: grid;

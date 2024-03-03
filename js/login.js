@@ -1,16 +1,17 @@
 // login
 $(document).ready(function () {
-  $('#loginForm').submit(function (event) {
+  $('#login-form').submit(function (event) {
     event.preventDefault();
-    let username = $('#username').val();
+    let email = $('#email').val();
     let password = $('#password').val();
-    console.log(username);
     // Verificar las credenciales almacenadas en localstore
-    let logged = username === 'admin' && password === '12345';
+    // simula consulta al backend por la credenciales almacenadas en BD
+    let logged = consultaRegistros(email, password);
+    //let logged = username === 'admin' && password === '12345';
     if (logged) {
       sessionStorage.setItem('auth', true);
       // Si las credenciales son válidas, redirigir a la pantalla de wallet
-      cargaWallet(username);
+      cargaWallet(email);
       window.location.href = '../codigo/menu.html';
     } else {
       // Si las credenciales son inválidas, mostrar mensaje de error
@@ -19,11 +20,20 @@ $(document).ready(function () {
     }
   });
 
+
+  const consultaRegistros = (email, password)=>{
+    let registrado = localStorage.getItem(email);
+    if(registrado){
+      return password = JSON.parse(registrado).password;
+    }
+    return false;
+  }
+
   // inicializa wallet si no existe
-  function cargaWallet(username) {
+  function cargaWallet(email) {
     if (!localStorage.getItem('wallet')) {
       const myWallet = {
-        user: username,
+        user: email,
         saldo: 0,
         trans: [],
         destinatarios: []
