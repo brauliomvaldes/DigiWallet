@@ -10,7 +10,10 @@ $(document).ready(function () {
   }else{
     let wallet = localStorage.getItem('wallet');
     if (wallet != null){
-      let bienvenida = (JSON.parse(wallet).user).toUpperCase();
+      let usuario = localStorage.getItem(JSON.parse(wallet).user);
+      let nombre = JSON.parse(usuario).nombres.split(' ')[0];
+      let apellido = JSON.parse(usuario).apellidos.split(' ')[0];
+      let bienvenida = nombre + ' '+ apellido;
       let saldo = JSON.parse(wallet).saldo.toLocaleString("es-ES");
       let fecha = new Date().toLocaleString().split(',')[0];
       $('#bienvenida').text(`Bienvenido(a) ${bienvenida}`);
