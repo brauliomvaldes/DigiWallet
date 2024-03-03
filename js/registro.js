@@ -1,5 +1,10 @@
 // login
 $(document).ready(function () {
+  // envia al login
+  $('#loginBtn').click(function () {
+    window.location.href = '../codigo/login.html';
+  })
+
   if (localStorage.getItem('wallet')) {
     swal("Registro fallido", "Ya existe Cliente con Wallet, debe recuperar sus credenciales!", "error");
   }

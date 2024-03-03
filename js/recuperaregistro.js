@@ -1,5 +1,9 @@
 // login
 $(document).ready(function () {
+  // envia al login
+  $('#loginBtn').click(function () {
+    window.location.href = '../codigo/login.html';
+  })
   if (!localStorage.getItem('wallet')) {
     swal("Recuperación fallida", "No puede recuperar contraseña, No hay registro de usuarios, debe registrarse!", "error");
   }

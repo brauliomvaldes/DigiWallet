@@ -5,8 +5,11 @@
 }
 
 body{
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(104,17,186,1) 100%);
+    background: rgb(0,0,3);
+background: -moz-linear-gradient(176deg, rgba(0,0,3,1) 0%, rgba(3,47,189,1) 35%, rgba(19,79,157,0.9434961484593838) 56%, rgba(0,212,255,1) 100%);
+background: -webkit-linear-gradient(176deg, rgba(0,0,3,1) 0%, rgba(3,47,189,1) 35%, rgba(19,79,157,0.9434961484593838) 56%, rgba(0,212,255,1) 100%);
+background: linear-gradient(176deg, rgba(0,0,3,1) 0%, rgba(3,47,189,1) 35%, rgba(19,79,157,0.9434961484593838) 56%, rgba(0,212,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000003",endColorstr="#00d4ff",GradientType=1);
 }
 h1{ 
     color: aliceblue;
@@ -23,7 +26,37 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 7px 13px 37px #000;
 }
-
+img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+nav{
+    border-radius: 5px;
+}
+nav>div{
+    background: rgb(239, 241, 242);
+}
+nav>div>span{
+    color: rgb(4, 4, 144);
+    font-size: 30px;
+}
+header>div>div{
+    color: rgb(45, 214, 23);
+    font-size: 60px;
+    background-color: rgb(6, 6, 56);
+    border-radius: 10px;
+    margin: 5px;
+    padding: auto;
+}
+header{
+    margin: 5px;
+}
+header>div>h2{
+    color: rgb(4, 4, 144);
+    background: rgb(239, 241, 242);
+    border-radius: 5px;
+}
 .form-registro h4{
     font-size: 22px;
     margin-bottom: 20px;
