@@ -10,8 +10,6 @@ $(document).ready(function () {
   }
   // logout
   $('#logoutBtn').click(function () {
-    $('#username').val('');
-    $('#password').val('');
     sessionStorage.setItem('auth', false);
     window.location.href = '../codigo/login.html';
   });
