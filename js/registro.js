@@ -36,16 +36,14 @@ $(document).ready(function () {
         trans: [],
         destinatarios: []
       };
-      // llimpia campos de ingreso
-      $('#nombres').val('');
-      $('#apellidos').val('');
-      $('#email').val('');
-      $('#password').val('');
-
       // almacena la billetera
       localStorage.setItem('wallet', JSON.stringify(myWallet));
       swal("Registro existoso", "Se registro correctamente el usuario!", "success");
     }
-
   });
+  // llimpia campos de ingreso
+  $('#nombres').text('');
+  $('#apellidos').text('');
+  $('#email').text('');
+  $('#password').text('');
 });
