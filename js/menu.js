@@ -10,9 +10,16 @@ $(document).ready(function () {
   }else{
     let wallet = localStorage.getItem('wallet');
     if (wallet != null){
+      // recupera datos del usuario
       let usuario = localStorage.getItem(JSON.parse(wallet).user);
+      // lee los nombre pero toma el primero
       let nombre = JSON.parse(usuario).nombres.split(' ')[0];
+      // transforma a mayústula el primer caracter y a minusculas los demás
+      nombre = nombre.charAt(0).toUpperCase() + nombre.slice(1).toLowerCase();
+      // lee los apellidos pero toma el primero
       let apellido = JSON.parse(usuario).apellidos.split(' ')[0];
+      // transforma a mayústula el primer caracter y a minusculas los demás
+      apellido = apellido.charAt(0).toUpperCase() + apellido.slice(1).toLowerCase();
       let bienvenida = nombre + ' '+ apellido;
       let saldo = JSON.parse(wallet).saldo.toLocaleString("es-ES");
       let fecha = new Date().toLocaleString().split(',')[0];
