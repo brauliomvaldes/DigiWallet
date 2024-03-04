@@ -4,9 +4,11 @@ $(document).ready(function () {
   $('#loginBtn').click(function () {
     window.location.href = '../codigo/login.html';
   })
+  // no hay una wallet creada es porque ya se ha registrado
   if (!localStorage.getItem('wallet')) {
     swal("Recuperación fallida", "No puede recuperar contraseña, No hay registro de usuarios, debe registrarse!", "error");
   }
+  // procesa formulario
   $('.form-registro').submit(function (event) {
     event.preventDefault();
     let email = $('#email').val();
@@ -18,5 +20,7 @@ $(document).ready(function () {
     } else {
       swal("Recuperación fallida", "No hay wallet asociada al correo entregado!", "error");
     }
+    // llimpia campos de ingreso
+    $(this).closest('form').find("input").val("");
   });
 });
