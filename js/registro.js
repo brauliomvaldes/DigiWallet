@@ -8,6 +8,9 @@ $(document).ready(function () {
   if (localStorage.getItem('wallet')) {
     swal("Registro fallido", "Ya existe Cliente con Wallet, debe recuperar sus credenciales!", "error");
   }
+  $('#terminosycondiciones').click(function () {
+    swal("Términos y Condiciones", "Detalle de términos y condiciones ......., al registrarse acepta estos términos y condiciones!", "info");
+  })
   // controla ocultar o no password
   $(document).on('change', 'input[type="checkbox"]', function (e) {
     if (!this.checked) {

@@ -75,6 +75,7 @@ header>div>h2{
 #condiciones a{
     text-decoration: none;
     color: #5052ec;
+    cursor: pointer;
 }
 
 #condiciones a:hover{
