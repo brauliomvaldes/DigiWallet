@@ -1,4 +1,4 @@
-// login
+// registro de usuario
 $(document).ready(function () {
   // envia al login por click boton login
   $('#loginBtn').click(function () {
@@ -9,15 +9,35 @@ $(document).ready(function () {
     swal("Registro fallido", "Ya existe Cliente con Wallet, debe recuperar sus credenciales!", "error");
   }
   // controla ocultar o no password
-  $(document).on('change','input[type="checkbox"]' ,function(e) {
-      if(!this.checked){
-        $('#password').prop('type', 'text');
-        $('#password-repite').prop('type', 'text');
-      }else{
-        $('#password').prop('type', 'password');
-        $('#password-repite').prop('type', 'password');
-      } 
-});
+  $(document).on('change', 'input[type="checkbox"]', function (e) {
+    if (!this.checked) {
+      $('#password').prop('type', 'text');
+      $('#password-repite').prop('type', 'text');
+    } else {
+      $('#password').prop('type', 'password');
+      $('#password-repite').prop('type', 'password');
+    }
+  });
+  // compara password 
+  $(document).on('keyup', 'input[name="password"]', function (e) {
+    if ($('#password-repite').val().trim() == $('#password').val().trim()) {
+      $('#password').prop('style', 'color: blue;');
+      $('#password-repite').prop('style', 'color: blue;');
+    } else {
+      $('#password').prop('style', 'color: red;');
+      $('#password-repite').prop('style', 'color: red;');
+    };
+  });
+  // compara password
+  $(document).on('keyup', 'input[name="password-repite"]', function (e) {
+    if ($('#password').val().trim() == $('#password-repite').val().trim()) {
+      $('#password').prop('style', 'color: blue;');
+      $('#password-repite').prop('style', 'color: blue;');
+    } else {
+      $('#password').prop('style', 'color: red;');
+      $('#password-repite').prop('style', 'color: red;');
+    };
+  });
   // procesa formulario
   $('.form-registro').submit(function (event) {
     event.preventDefault();
@@ -25,15 +45,15 @@ $(document).ready(function () {
     if (localStorage.getItem('wallet')) {
       swal("Registro fallido", "Ya existe Cliente con Wallet, debe recuperar sus credenciales!", "error");
     } else {
-      let nombres = $('#nombres').val();
-      let apellidos = $('#apellidos').val();
-      
-      let email = $('#email').val();
-      let password = $('#password').val();
-      let passwordrepite = $('#password-repite').val();
-      if(password != passwordrepite){
+      let nombres = $('#nombres').val().trim();
+      let apellidos = $('#apellidos').val().trim();
+
+      let email = $('#email').val().trim();
+      let password = $('#password').val().trim();
+      let passwordrepite = $('#password-repite').val().trim();
+      if (password != passwordrepite) {
         swal("Registro fallido", "Las contraseñas no coinciden, vuelva a intentarlo!", "error");
-      }else{
+      } else {
         // pregunta si no existe una wallet
         usuario = {
           nombres: nombres,
@@ -55,7 +75,7 @@ $(document).ready(function () {
         swal("Registro existoso", "Se registro correctamente el usuario!", "success");
       }
     }
-    // llimpia campos de ingreso
+    // limpia campos del formulario de registro
     $(this).closest('form').find("input").val("");
   });
 });

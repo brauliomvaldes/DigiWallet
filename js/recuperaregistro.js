@@ -1,4 +1,4 @@
-// login
+// recupera password
 $(document).ready(function () {
   // envia al login
   $('#loginBtn').click(function () {
